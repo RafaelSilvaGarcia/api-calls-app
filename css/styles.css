@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #e65c00;
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s;
+    position: relative;
+}
+
+.sidebar.collapsed {
+    width: 30px;
+    padding: 10px;
+}
+
+.sidebar .toggle-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sidebar h1, .sidebar h2, .sidebar section {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed h1, .sidebar.collapsed h2, .sidebar.collapsed section, .sidebar.collapsed footer {
+    display: none;
+    opacity: 0;
+}
+
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-content div { line-height: 30px;}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #ffcc00;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.main-content h2 {
+    color: #e65c00;
+    border-bottom: 1px solid #e65c00;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+#news-info {
+    flex: 1;
+}
+
+.news-item a { text-decoration: none;}
+
+.news-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 250px;
+    float: left;
+}
+
+.news-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #e65c00;
+}
+
+.news-item p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 3px 10px;
+    background-color: #e65c00;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 0 -20px;
+    position: absolute;
+}

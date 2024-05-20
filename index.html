@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalização, Clima e Notícias</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <button class="toggle-button" id="toggle-button">☰</button>
+            <h1>Chamadas <br /> de APIs</h1>
+            <section id="location-info">
+                <h2>Sua Localização</h2>
+                <div id="location">Buscando localização...</div>
+            </section>
+            <section id="weather-info">
+                <h2>Clima Atual</h2>
+                <div id="temperature">Buscando temperatura...</div>
+                <div id="weather-description"></div>
+                <div id="weather-icon"></div>
+            </section>
+            <footer>
+                <p>CNMS - ETEC Jorge Street</p>
+            </footer>
+        </div>
+
+    </div>
+    <div class="main-content" id="main-content">
+        <div id="map"></div>
+        <div id="news-info">
+            <h2>Últimas Notícias</h2>
+            <div id="news">Buscando notícias...</div>
+        </div>
+    </div>
+</body>
+</html>
