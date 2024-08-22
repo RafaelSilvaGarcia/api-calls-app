@@ -20,4 +20,5 @@
 *Descrição*: Busca as últimas noticias públicadas pelo IBGE.
 
 Autor: Prof. Renato Gobet Uzun
+Assaltante: Rafael da Silva Garcia
 
